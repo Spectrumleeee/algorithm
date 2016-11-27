@@ -3,7 +3,7 @@
  * Created: 2016-11-27
  */
 
-package xmu.cs.lgp.algorithm.queue;
+package xmu.cs.lgp.algorithm.stack;
 
 import java.util.LinkedList;
 import java.util.Queue;
