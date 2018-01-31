@@ -13,8 +13,8 @@ public class QueueBy2Stack {
     Stack<String> stack2;
 
     public QueueBy2Stack() {
-        stack1 = new Stack<>();
-        stack2 = new Stack<>();
+        stack1 = new Stack<String>();
+        stack2 = new Stack<String>();
     }
 
     public void appendTail(String item) {
