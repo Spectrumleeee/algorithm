@@ -6,9 +6,16 @@
 package xmu.cs.lgp.algorithm.recursion;
 /**
  * 剑指Offer --- 12.输出1，2，3一直到最大的n位整数。
- * 递归解法
+ * 考察点：递归解法，n可能非常大，不能用整型
  */
 public class Print1ToMaxOfNDigits {
+    
+    public static final int N = 4;
+    
+    public static void main(String[] args) {
+        Print1ToMaxOfNDigits tester = new Print1ToMaxOfNDigits();
+        tester.print1ToMaxOfNDigits(N);
+    }
     
     public void print1ToMaxOfNDigits(int n) {
         char number[] = new char[n];
@@ -42,10 +49,5 @@ public class Print1ToMaxOfNDigits {
         }
         
         System.out.println();
-    }
-    
-    public static void main(String[] args) {
-        Print1ToMaxOfNDigits tester = new Print1ToMaxOfNDigits();
-        tester.print1ToMaxOfNDigits(3);
     }
 }
