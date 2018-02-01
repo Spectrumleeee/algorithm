@@ -17,8 +17,7 @@ public class QuickSortRecursive {
         sort(number, p + 1, end);
     }
 
-    @SuppressWarnings("unused")
-    private static int partition1(int[] number, int start, int end) {
+    public static int partition1(int[] number, int start, int end) {
         int pivot = number[start];
         int low = start;
         int high = start + 1;
@@ -33,13 +32,13 @@ public class QuickSortRecursive {
         return low;
     }
 
-    private static void swap(int[] number, int i, int j) {
+    public static void swap(int[] number, int i, int j) {
         int temp = number[i];
         number[i] = number[j];
         number[j] = temp;
     }
     
-    private static int partition2(int[] number, int start, int end) {
+    public static int partition2(int[] number, int start, int end) {
         int pivot = number[start];
         while (start < end) {
             while (start < end && pivot <= number[end])

@@ -7,6 +7,7 @@ package xmu.cs.lgp.algorithm.linkedlist.pojo;
 
 public class LinkedNode {
     private int value;
+    private String name;
     private LinkedNode next;
 
     public LinkedNode() {
@@ -36,5 +37,13 @@ public class LinkedNode {
 
     public void setNext(LinkedNode next) {
         this.next = next;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 }
