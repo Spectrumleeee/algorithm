@@ -11,14 +11,22 @@ public class LinkedNode {
     private LinkedNode next;
 
     public LinkedNode() {
-        this(-1, null);
+        this(-1, null, null);
     }
     
     public LinkedNode(int value) {
-        this(value, null);
+        this(value, null, null);
     }
     
-    public LinkedNode(int value, LinkedNode next) {
+    public LinkedNode(String name) {
+        this(-1, name, null);
+    }
+    
+    public LinkedNode(int value, String name) {
+        this(value, name, null);
+    }
+    
+    public LinkedNode(int value, String name, LinkedNode next) {
         this.value = value;
         this.next = next;
     }
